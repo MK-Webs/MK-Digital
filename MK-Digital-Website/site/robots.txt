@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /demos/
-
-Sitemap: https://mkdigital.site/sitemap.xml
