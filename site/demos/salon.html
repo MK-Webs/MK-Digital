@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio Noir — hair studio</title>
+<meta name="description" content="Concept website built by MK Digital for a small hair studio.">
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --black:#0e0e10; --smoke:#17171a; --blush:#e3c3b8; --bone:#f0ece8;
+    --line:rgba(240,236,232,.13);
+  }
+  *{box-sizing:border-box;margin:0}
+  body{
+    background:var(--black); color:var(--bone);
+    font:15px/1.65 "Helvetica Neue",Helvetica,system-ui,sans-serif;
+    letter-spacing:.01em;-webkit-font-smoothing:antialiased;
+  }
+  .u{width:min(100% - 34px,1020px);margin-inline:auto}
+  header{position:sticky;top:0;z-index:5;background:rgba(14,14,16,.9);backdrop-filter:blur(10px)}
+  .bar{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:12px}
+  .logo{font-size:13px;letter-spacing:.38em;text-transform:uppercase;font-weight:300}
+  nav{display:none;gap:24px;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+  nav a{color:rgba(240,236,232,.6);text-decoration:none}
+  .book{
+    border:1px solid var(--blush);color:var(--blush);padding:9px 16px;
+    font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;white-space:nowrap
+  }
+  .hero{padding:64px 0 56px;text-align:center;position:relative}
+  .hero::after{
+    content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+    width:min(78%,520px);height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)
+  }
+  h1{
+    font-size:clamp(38px,11vw,78px);line-height:1;font-weight:200;letter-spacing:-.02em;margin-bottom:20px
+  }
+  h1 span{display:block;font-style:italic;color:var(--blush);font-weight:300}
+  .hero p{max-width:34ch;margin:0 auto;color:rgba(240,236,232,.58);font-size:14.5px}
+  .acts{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .btn{
+    padding:14px 26px;text-decoration:none;font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:500
+  }
+  .btn.solid{background:var(--bone);color:var(--black)}
+  .btn.line{border:1px solid var(--line);color:var(--bone)}
+  section{padding:48px 0}
+  h2{
+    font-size:11px;letter-spacing:.34em;text-transform:uppercase;font-weight:400;
+    color:var(--blush);margin-bottom:26px;text-align:center
+  }
+  .list{display:grid;gap:0;max-width:640px;margin-inline:auto}
+  .line-item{
+    display:grid;grid-template-columns:1fr auto;gap:3px 18px;align-items:baseline;
+    padding:17px 0;border-bottom:1px solid var(--line)
+  }
+  .line-item:first-child{border-top:1px solid var(--line)}
+  .line-item b{font-weight:400;font-size:17px}
+  .line-item i{font-style:normal;color:var(--blush);font-size:13px}
+  .line-item p{grid-column:1/-1;font-size:12.5px;color:rgba(240,236,232,.45)}
+  .quote{background:var(--smoke);padding:54px 0;text-align:center}
+  .quote p{
+    font-size:clamp(17px,4.6vw,25px);font-weight:200;line-height:1.5;max-width:26ch;margin:0 auto;font-style:italic
+  }
+  .quote cite{display:block;margin-top:18px;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;font-style:normal;color:rgba(240,236,232,.4)}
+  .info{display:grid;gap:26px;text-align:center}
+  .info h3{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--blush);font-weight:400;margin-bottom:9px}
+  .info p{font-size:14px;color:rgba(240,236,232,.62);line-height:1.9}
+  footer{padding:24px 0 34px;text-align:center;font-size:10.5px;letter-spacing:.14em;color:rgba(240,236,232,.32)}
+  @media(min-width:620px){
+    nav{display:flex}
+    .info{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="u bar">
+    <div class="logo">Studio Noir</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#visit">Studio</a>
+    </nav>
+    <a class="book" href="#visit">Book</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="u">
+      <h1>Cut with<span>intention.</span></h1>
+      <p>A two-chair studio. One stylist, one guest, no rushing and no upselling.</p>
+      <div class="acts">
+        <a class="btn solid" href="#visit">Book an appointment</a>
+        <a class="btn line" href="#services">See services</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="u">
+      <h2>Services</h2>
+      <div class="list">
+        <div class="line-item">
+          <b>Cut and finish</b><i>from $95</i>
+          <p>Consultation, wash, cut and a finish you can repeat at home.</p>
+        </div>
+        <div class="line-item">
+          <b>Colour</b><i>from $180</i>
+          <p>Gloss, balayage or a full change, quoted after a strand test.</p>
+        </div>
+        <div class="line-item">
+          <b>Treatment</b><i>from $60</i>
+          <p>Bond repair or scalp treatment, added to any appointment.</p>
+        </div>
+        <div class="line-item">
+          <b>Consultation</b><i>complimentary</i>
+          <p>Fifteen minutes to talk it through before you commit to anything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="u">
+      <p>She listened for ten minutes before she picked up the scissors.</p>
+      <cite>Guest since 2021</cite>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="u">
+      <h2>The studio</h2>
+      <div class="info">
+        <div>
+          <h3>Hours</h3>
+          <p>Tue to Fri, 9 to 6<br>Saturday, 8 to 2<br>Closed Sun and Mon</p>
+        </div>
+        <div>
+          <h3>Where</h3>
+          <p>Level 1, 8 Marlow Lane<br>Buzzer on the left</p>
+        </div>
+        <div>
+          <h3>Booking</h3>
+          <p>By appointment only<br>Message any time</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>Studio Noir — concept site by MK Digital. Not a real business.</footer>
+
+</body>
+</html>
