@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hazel &amp; Fern — neighbourhood café</title>
+<meta name="description" content="Concept website built by MK Digital for a small neighbourhood café.">
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --cream:#fbf7f0; --ink:#20291f; --moss:#2f5741; --clay:#c67b4c;
+    --line:rgba(32,41,31,.14);
+  }
+  *{box-sizing:border-box;margin:0}
+  body{
+    background:var(--cream); color:var(--ink);
+    font:16px/1.6 Georgia,"Times New Roman",serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .u{width:min(100% - 36px,1060px);margin-inline:auto}
+  header{
+    position:sticky;top:0;z-index:5;
+    background:rgba(251,247,240,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar{display:flex;align-items:center;justify-content:space-between;min-height:58px;gap:12px}
+  .logo{font-size:17px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+  .logo small{display:block;font-size:8px;letter-spacing:.3em;color:var(--moss);font-weight:400}
+  nav{display:none;gap:22px;font-size:13px;letter-spacing:.06em}
+  nav a{color:var(--ink);opacity:.72;text-decoration:none}
+  .call{
+    padding:9px 15px;border-radius:999px;background:var(--moss);color:var(--cream);
+    font-size:12px;letter-spacing:.06em;text-decoration:none;white-space:nowrap;font-family:system-ui,sans-serif;font-weight:600;
+  }
+  .hero{padding:52px 0 44px;position:relative;overflow:hidden}
+  .hero::after{
+    content:"";position:absolute;right:-90px;top:-70px;width:280px;height:280px;border-radius:50%;
+    background:radial-gradient(circle at 35% 35%,rgba(198,123,76,.22),rgba(47,87,65,.12));
+  }
+  .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--moss);font-family:system-ui,sans-serif}
+  h1{font-size:clamp(34px,8.5vw,64px);line-height:1.02;margin:14px 0 16px;font-weight:400;letter-spacing:-.02em;max-width:12ch}
+  h1 em{font-style:italic;color:var(--moss)}
+  .hero p{max-width:40ch;font-size:clamp(15px,3.4vw,18px);opacity:.78}
+  .acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;position:relative;z-index:2}
+  .btn{
+    display:inline-block;padding:13px 22px;border-radius:999px;text-decoration:none;
+    font-family:system-ui,sans-serif;font-size:14px;font-weight:600;
+  }
+  .btn.solid{background:var(--ink);color:var(--cream)}
+  .btn.line{border:1px solid var(--line);color:var(--ink)}
+  .menu{padding:38px 0;border-top:1px solid var(--line)}
+  h2{font-size:clamp(22px,5vw,32px);font-weight:400;letter-spacing:-.01em;margin-bottom:22px}
+  .items{display:grid;gap:2px}
+  .item{
+    display:grid;grid-template-columns:1fr auto;gap:4px 16px;
+    padding:15px 0;border-bottom:1px solid var(--line);align-items:baseline;
+  }
+  .item b{font-weight:700;font-size:16px}
+  .item span{font-family:system-ui,sans-serif;font-size:13px;color:var(--clay);font-weight:600}
+  .item p{grid-column:1/-1;font-size:13.5px;opacity:.62;max-width:52ch}
+  .band{background:var(--moss);color:var(--cream);padding:34px 0;margin-top:38px}
+  .band blockquote{font-size:clamp(18px,4.4vw,26px);line-height:1.4;max-width:24ch;font-style:italic}
+  .band cite{display:block;margin-top:14px;font-size:12px;font-style:normal;opacity:.7;font-family:system-ui,sans-serif;letter-spacing:.08em}
+  .visit{padding:38px 0}
+  .cols{display:grid;gap:26px}
+  .cols h3{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--moss);margin-bottom:10px;font-family:system-ui,sans-serif}
+  .cols p{font-size:15px;line-height:1.8}
+  footer{border-top:1px solid var(--line);padding:22px 0 30px;font-size:12px;opacity:.6;font-family:system-ui,sans-serif}
+  @media(min-width:620px){
+    nav{display:flex}
+    .items{grid-template-columns:1fr 1fr;gap:0 40px}
+    .cols{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="u bar">
+    <div class="logo">Hazel &amp; Fern<small>Est. 2019</small></div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+      <a href="#visit">Hours</a>
+    </nav>
+    <a class="call" href="tel:+61700000000">Book a table</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="u">
+      <p class="eyebrow">Corner of Vine &amp; Sixth</p>
+      <h1>Slow mornings, <em>properly</em> made.</h1>
+      <p>Single-origin coffee, bread baked on site before six, and a courtyard that gets the good light until about eleven.</p>
+      <div class="acts">
+        <a class="btn solid" href="#menu">See the menu</a>
+        <a class="btn line" href="#visit">Find us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="u">
+      <h2>This week</h2>
+      <div class="items">
+        <div class="item">
+          <b>Ethiopia, Guji</b><span>$5.50</span>
+          <p>Filter. Stone fruit and black tea, brewed to order.</p>
+        </div>
+        <div class="item">
+          <b>Cardamom bun</b><span>$6.00</span>
+          <p>Laminated overnight. Out of the oven at 7am and again at noon.</p>
+        </div>
+        <div class="item">
+          <b>Eggs on sourdough</b><span>$16.00</span>
+          <p>Two eggs, cultured butter, herbs from the back planter box.</p>
+        </div>
+        <div class="item">
+          <b>The long lunch</b><span>$28.00</span>
+          <p>Soup, half sandwich and a filter coffee. Weekdays only.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="u">
+      <blockquote>The only place nearby where the staff remember how you take it.</blockquote>
+      <cite>— Neighbourhood Weekly</cite>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="u">
+      <h2>Come in</h2>
+      <div class="cols">
+        <div>
+          <h3>Hours</h3>
+          <p>Mon to Fri, 6:30am to 3pm<br>Weekends, 7am to 2pm<br>Closed public holidays</p>
+        </div>
+        <div>
+          <h3>Find us</h3>
+          <p>14 Vine Street<br>Corner entrance, courtyard at the back</p>
+        </div>
+        <div>
+          <h3>Groups</h3>
+          <p>Tables of six or more, call ahead and we will hold the long table.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="u">Hazel &amp; Fern — concept site by MK Digital. Not a real business.</div>
+</footer>
+
+</body>
+</html>
