@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Studio Noir — hair studio</title><meta name="description" content="Concept website built by MK Digital for a small hair studio."><meta name="robots" content="noindex">
+<style>
+:root{--black:#0e0e10;--smoke:#17171a;--smoke2:#202025;--blush:#e3c3b8;--bone:#f0ece8;--muted:rgba(240,236,232,.58);--line:rgba(240,236,232,.13)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{background:var(--black);color:var(--bone);font:15px/1.65 "Helvetica Neue",Helvetica,system-ui,sans-serif;letter-spacing:.01em;-webkit-font-smoothing:antialiased}.u{width:min(100% - 34px,1040px);margin-inline:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(14,14,16,.84);backdrop-filter:blur(14px);border-bottom:1px solid transparent}.bar{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:12px}.logo{font-size:13px;letter-spacing:.38em;text-transform:uppercase;font-weight:300}nav{display:none;gap:24px;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase}nav a{color:rgba(240,236,232,.58);text-decoration:none}.book{border:1px solid var(--blush);color:var(--blush);padding:9px 16px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:background .25s ease,color .25s ease}.book:hover{background:var(--blush);color:var(--black)}
+.hero{padding:72px 0 62px;text-align:center;position:relative;overflow:hidden}.hero::before{content:"";position:absolute;left:50%;top:-180px;transform:translateX(-50%);width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(227,195,184,.16),transparent 66%);pointer-events:none}.eyebrow{font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--blush);position:relative}h1{font-size:clamp(40px,10.5vw,84px);line-height:.96;font-weight:200;letter-spacing:-.025em;margin:12px 0 21px;position:relative}h1 span{display:block;font-style:italic;color:var(--blush);font-weight:300}.hero p{max-width:35ch;margin:0 auto;color:var(--muted);font-size:14.5px;position:relative}.acts{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:31px;position:relative}.btn{min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:0 25px;text-decoration:none;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:500;transition:transform .25s ease,background .25s ease}.btn:hover{transform:translateY(-2px)}.btn.solid{background:var(--bone);color:var(--black)}.btn.line{border:1px solid var(--line);color:var(--bone)}
+.signature{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;max-width:680px;margin:42px auto 0;border:1px solid var(--line);background:var(--line)}.signature div{background:var(--black);padding:15px 10px}.signature b{display:block;font-size:12px;font-weight:400}.signature span{display:block;margin-top:5px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,236,232,.36)}
+section{padding:54px 0;border-top:1px solid var(--line)}h2{font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;font-weight:400;color:var(--blush);margin-bottom:25px;text-align:center}.list{display:grid;gap:0;max-width:700px;margin-inline:auto}.line-item{display:grid;grid-template-columns:1fr auto;gap:3px 18px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line);transition:padding .25s ease}.line-item:first-child{border-top:1px solid var(--line)}.line-item:hover{padding-inline:7px}.line-item b{font-weight:400;font-size:17px}.line-item i{font-style:normal;color:var(--blush);font-size:13px}.line-item p{grid-column:1/-1;font-size:12.5px;color:rgba(240,236,232,.45)}
+.lookbook{display:grid;gap:12px;margin-top:28px}.swatch{min-height:128px;border:1px solid var(--line);display:flex;align-items:end;padding:15px;position:relative;overflow:hidden}.swatch::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(227,195,184,.15),transparent 48%,rgba(255,255,255,.04))}.swatch:nth-child(2)::before{background:linear-gradient(135deg,rgba(120,96,78,.22),transparent 48%,rgba(255,255,255,.04))}.swatch:nth-child(3)::before{background:linear-gradient(135deg,rgba(210,160,125,.2),transparent 48%,rgba(255,255,255,.04))}.swatch b{position:relative;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:400}.swatch span{display:block;position:relative;margin-top:4px;font-size:11px;color:rgba(240,236,232,.45)}
+.quote{background:var(--smoke);padding:58px 0;text-align:center}.quote p{font-size:clamp(18px,4.6vw,27px);font-weight:200;line-height:1.5;max-width:27ch;margin:0 auto;font-style:italic}.quote cite{display:block;margin-top:18px;font-size:10px;letter-spacing:.24em;text-transform:uppercase;font-style:normal;color:rgba(240,236,232,.38)}.info{display:grid;gap:26px;text-align:center}.info>div{padding-top:15px;border-top:1px solid var(--line)}.info h3{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--blush);font-weight:400;margin-bottom:9px}.info p{font-size:14px;color:rgba(240,236,232,.62);line-height:1.9}.book-note{margin-top:26px;text-align:center;color:rgba(240,236,232,.36);font-size:11px;letter-spacing:.05em}
+footer{padding:24px 0 34px;text-align:center;font-size:10px;letter-spacing:.14em;color:rgba(240,236,232,.28)}
+.demo-menu-toggle{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:transparent;color:inherit;padding:8px 12px;font:inherit;font-size:10px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer}
+.demo-mobile-nav{display:none;border-top:1px solid var(--line);padding:8px 17px 13px;gap:5px}
+.demo-mobile-nav.open{display:grid}
+.demo-mobile-nav a{padding:9px 2px;color:inherit;text-decoration:none;font-size:11px;opacity:.7}
+.demo-menu-toggle{margin-left:auto}
+@media(min-width:620px){nav{display:flex}.lookbook{grid-template-columns:repeat(3,1fr)}.info{grid-template-columns:repeat(3,1fr)}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.line-item{transition:none}}
+@media(min-width:620px){.demo-menu-toggle{display:none}.demo-mobile-nav{display:none!important}}
+</style></head>
+<body>
+<header><div class="u bar"><div class="logo">Studio Noir</div><nav><a href="#services">Services</a><a href="#studio">Studio</a><a href="#book">Book</a></nav><a class="book" href="#book">Book</a><button class="demo-menu-toggle" type="button" aria-expanded="false" aria-controls="demo-nav" aria-label="Open menu">Menu</button></div><div class="demo-mobile-nav" id="demo-nav"><a href="#services">Services</a><a href="#studio">Studio</a><a href="#book">Book</a></div></header>
+<main>
+<section class="hero"><div class="u"><p class="eyebrow">Private hair studio · by appointment</p><h1>Cut with<span>intention.</span></h1><p>A two-chair studio. One stylist, one guest, no rushing and no upselling.</p><div class="acts"><a class="btn solid" href="#book">Book an appointment</a><a class="btn line" href="#services">See services</a></div><div class="signature"><div><b>02</b><span>Chairs</span></div><div><b>01:1</b><span>Attention</span></div><div><b>2021</b><span>Studio opened</span></div></div></div></section>
+<section id="services"><div class="u"><h2>Services</h2><div class="list"><div class="line-item"><b>Cut and finish</b><i>from $95</i><p>Consultation, wash, cut and a finish you can repeat at home.</p></div><div class="line-item"><b>Colour</b><i>from $180</i><p>Gloss, balayage or a full change, quoted after a strand test.</p></div><div class="line-item"><b>Treatment</b><i>from $60</i><p>Bond repair or scalp treatment, added to any appointment.</p></div><div class="line-item"><b>Consultation</b><i>complimentary</i><p>Fifteen minutes to talk it through before you commit to anything.</p></div></div><div class="lookbook"><div class="swatch"><div><b>Soft shape</b><span>Cut · movement · finish</span></div></div><div class="swatch"><div><b>Warm tone</b><span>Gloss · depth · shine</span></div></div><div class="swatch"><div><b>Clean line</b><span>Polish · texture · ease</span></div></div></div></div></section>
+<section class="quote"><div class="u"><p>She listened for ten minutes before she picked up the scissors.</p><cite>Guest since 2021</cite></div></section>
+<section id="studio"><div class="u"><h2>The studio</h2><div class="info"><div><h3>Hours</h3><p>Tue to Fri, 9 to 6<br>Saturday, 8 to 2<br>Closed Sun and Mon</p></div><div><h3>Where</h3><p>Level 1, 8 Marlow Lane<br>Buzzer on the left</p></div><div><h3>Booking</h3><p>By appointment only<br>Message any time</p></div></div><p class="book-note" id="book">A quiet page for a quiet studio — the booking action stays visible without taking over.</p></div></section>
+</main><footer>Studio Noir — concept site by MK Digital. Not a real business.</footer>
+<script>
+(function(){
+  var b=document.querySelector(".demo-menu-toggle"),m=document.querySelector(".demo-mobile-nav");
+  if(!b||!m)return;
+  b.addEventListener("click",function(){
+    var open=b.getAttribute("aria-expanded")==="true";
+    b.setAttribute("aria-expanded",String(!open)); m.classList.toggle("open",!open);
+    b.textContent=open?"Menu":"Close";
+  });
+  m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){b.setAttribute("aria-expanded","false");m.classList.remove("open");b.textContent="Menu";});});
+})();
+</script><script>
+(function(){
+  document.addEventListener("click",function(e){
+    var a=e.target.closest("a[href^='#']"); if(!a)return;
+    var id=a.getAttribute("href").slice(1),t=document.getElementById(id); if(!t)return;
+    e.preventDefault();
+    var y=t.getBoundingClientRect().top+window.pageYOffset-12;
+    window.scrollTo({top:y,behavior:"smooth"});
+    history.replaceState(null,"","#"+encodeURIComponent(id));
+  });
+})();
+</script></body></html>

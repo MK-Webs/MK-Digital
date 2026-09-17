@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hazel &amp; Fern — neighbourhood café</title>
+<meta name="description" content="Concept website built by MK Digital for a small neighbourhood café.">
+<meta name="robots" content="noindex">
+<style>
+:root{--cream:#fbf7f0;--ink:#20291f;--moss:#2f5741;--clay:#c67b4c;--leaf:#809a7e;--line:rgba(32,41,31,.13);--soft:#f2eadf}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}body{background:var(--cream);color:var(--ink);font:16px/1.62 Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}.u{width:min(100% - 36px,1080px);margin-inline:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(251,247,240,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.bar{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:14px}.logo{font-size:17px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}.logo small{display:block;font:400 8px/1 system-ui,sans-serif;letter-spacing:.3em;color:var(--moss);margin-top:3px}nav{display:none;gap:22px;font:13px system-ui,sans-serif}nav a{color:var(--ink);opacity:.68;text-decoration:none}.call{padding:10px 16px;border-radius:999px;background:var(--moss);color:var(--cream);font:600 12px system-ui,sans-serif;letter-spacing:.05em;text-decoration:none;white-space:nowrap;transition:transform .25s ease,box-shadow .25s ease}.call:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(47,87,65,.18)}
+.hero{padding:70px 0 54px;position:relative;overflow:hidden}.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}.hero::before{width:420px;height:420px;right:-130px;top:-160px;background:radial-gradient(circle at 35% 35%,rgba(198,123,76,.24),rgba(128,154,126,.12) 48%,transparent 70%)}.hero::after{width:180px;height:180px;left:-100px;bottom:-120px;background:rgba(47,87,65,.08)}.eyebrow{font:600 11px system-ui,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--moss)}h1{font-size:clamp(36px,8.5vw,70px);line-height:.99;margin:14px 0 17px;font-weight:400;letter-spacing:-.03em;max-width:12ch}h1 em{font-style:italic;color:var(--moss)}.hero p{max-width:44ch;font-size:clamp(15px,3.3vw,18px);opacity:.74}.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;position:relative;z-index:2}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 19px;border-radius:999px;text-decoration:none;font:600 13px system-ui,sans-serif;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}.btn:hover{transform:translateY(-2px)}.btn.solid{background:var(--ink);color:var(--cream);box-shadow:0 10px 24px rgba(32,41,31,.1)}.btn.line{border:1px solid var(--line);color:var(--ink);background:rgba(255,255,255,.3)}
+.hero-grid{display:grid;gap:28px;align-items:end}.feature{padding:18px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.34);box-shadow:0 18px 40px rgba(32,41,31,.06)}.feature-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;font:700 10px system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--moss)}.open{display:inline-flex;align-items:center;gap:7px}.open i{width:6px;height:6px;border-radius:50%;background:var(--moss);box-shadow:0 0 0 5px rgba(47,87,65,.09)}.feature h2{font-size:28px;line-height:1.05;font-weight:400;margin-bottom:6px}.feature p{font-size:13px;opacity:.68}.feature-row{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:end;margin-top:20px}.feature-price{font:700 13px system-ui,sans-serif;color:var(--clay)}
+.menu{padding:42px 0;border-top:1px solid var(--line)}h2{font-size:clamp(23px,5vw,32px);font-weight:400;letter-spacing:-.015em;margin-bottom:22px}.section-kicker{display:flex;align-items:baseline;justify-content:space-between;gap:16px}.section-kicker span{font:600 10px system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--moss)}.items{display:grid;gap:0}.item{display:grid;grid-template-columns:1fr auto;gap:4px 18px;padding:17px 0;border-bottom:1px solid var(--line);transition:padding .25s ease}.item:hover{padding-left:6px;padding-right:6px}.item b{font-size:16px}.item span{font:700 12px system-ui,sans-serif;color:var(--clay)}.item p{grid-column:1/-1;font-size:13.5px;opacity:.62;max-width:58ch}
+.band{margin-top:42px;background:var(--moss);color:var(--cream);padding:38px 0}.band-in{display:grid;gap:22px;align-items:center}.band blockquote{font-size:clamp(20px,4.5vw,29px);line-height:1.37;max-width:24ch;font-style:italic}.band cite{display:block;margin-top:13px;font:12px system-ui,sans-serif;letter-spacing:.08em;opacity:.72}.band .btn{background:var(--cream);color:var(--ink);justify-self:start}
+.visit{padding:44px 0}.cols{display:grid;gap:24px}.cols>div{padding-top:16px;border-top:1px solid var(--line)}.cols h3{font:700 10px system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--moss);margin-bottom:10px}.cols p{font-size:15px;line-height:1.82}.fine{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font:12px/1.6 system-ui,sans-serif;opacity:.55}
+footer{border-top:1px solid var(--line);padding:22px 0 30px;font:12px system-ui,sans-serif;opacity:.58}@media(min-width:660px){nav{display:flex}.hero-grid{grid-template-columns:1.18fr .82fr}.items{grid-template-columns:1fr 1fr;column-gap:42px}.cols{grid-template-columns:repeat(3,1fr)}.band-in{grid-template-columns:1fr auto}.band .btn{justify-self:end}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.call,.item{transition:none}}
+@media(min-width:620px){.demo-menu-toggle{display:none}.demo-mobile-nav{display:none!important}}
+.demo-menu-toggle{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:transparent;color:inherit;padding:8px 12px;font:inherit;font-size:10px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;margin-left:auto}
+.demo-mobile-nav{display:none;border-top:1px solid var(--line);padding:8px 17px 13px;gap:5px}
+.demo-mobile-nav.open{display:grid}
+.demo-mobile-nav a{padding:9px 2px;color:inherit;text-decoration:none;font-size:11px;opacity:.7}
+</style><style>@media(min-width:620px){.demo-menu-toggle{display:none!important}.demo-mobile-nav{display:none!important}}</style></head>
+<body>
+<header><div class="u bar"><div class="logo">Hazel &amp; Fern<small>Est. 2019 · neighbourhood café</small></div><nav><a href="#menu">Menu</a><a href="#visit">Visit</a><a href="#story">About</a></nav><a class="call" href="#visit">Book a table</a><button class="demo-menu-toggle" type="button" aria-expanded="false" aria-controls="demo-nav" aria-label="Open menu">Menu</button></div><div class="demo-mobile-nav" id="demo-nav"><a href="#menu">Menu</a><a href="#visit">Visit</a><a href="#story">About</a></div></header>
+<main>
+<section class="hero"><div class="u hero-grid"><div><p class="eyebrow">Corner of Vine &amp; Sixth</p><h1>Slow mornings, <em>properly</em> made.</h1><p>Single-origin coffee, bread baked on site before six, and a courtyard that gets the good light until about eleven.</p><div class="acts"><a class="btn solid" href="#menu">See the menu</a><a class="btn line" href="#visit">Find us</a></div></div><aside class="feature" aria-label="Today’s special"><div class="feature-top"><span class="open"><i></i> Open today</span><span>Mon–Fri · 6:30–3</span></div><h2>Cardamom bun</h2><p>Laminated overnight, orange zest, brown sugar and a little sea salt.</p><div class="feature-row"><span>Out at 7am</span><span class="feature-price">$6.00</span></div></aside></div></section>
+<section class="menu" id="menu"><div class="u"><div class="section-kicker"><h2>This week</h2><span>Breakfast · Lunch · Coffee</span></div><div class="items"><div class="item"><b>Ethiopia, Guji</b><span>$5.50</span><p>Filter. Stone fruit and black tea, brewed to order.</p></div><div class="item"><b>Cardamom bun</b><span>$6.00</span><p>Laminated overnight. Out of the oven at 7am and again at noon.</p></div><div class="item"><b>Eggs on sourdough</b><span>$16.00</span><p>Two eggs, cultured butter, herbs from the back planter box.</p></div><div class="item"><b>The long lunch</b><span>$28.00</span><p>Soup, half sandwich and a filter coffee. Weekdays only.</p></div></div></div></section>
+<section class="band" id="story"><div class="u band-in"><div><blockquote>The only place nearby where the staff remember how you take it.</blockquote><cite>— Neighbourhood Weekly</cite></div><a class="btn" href="#visit">Plan your visit</a></div></section>
+<section class="visit" id="visit"><div class="u"><h2>Come in</h2><div class="cols"><div><h3>Hours</h3><p>Mon to Fri, 6:30am to 3pm<br>Weekends, 7am to 2pm<br>Closed public holidays</p></div><div><h3>Find us</h3><p>14 Vine Street<br>Corner entrance, courtyard at the back</p></div><div><h3>Groups</h3><p>Tables of six or more, call ahead and we will hold the long table.</p></div></div><p class="fine">A calm page on purpose: the menu, hours and location are never more than a short scroll away.</p></div></section>
+</main><footer><div class="u">Hazel &amp; Fern — concept site by MK Digital. Not a real business.</div></footer>
+<script>
+(function(){
+  var b=document.querySelector(".demo-menu-toggle"),m=document.querySelector(".demo-mobile-nav");
+  if(!b||!m)return;
+  b.addEventListener("click",function(){
+    var open=b.getAttribute("aria-expanded")==="true";
+    b.setAttribute("aria-expanded",String(!open)); m.classList.toggle("open",!open);
+    b.textContent=open?"Menu":"Close";
+  });
+  m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){b.setAttribute("aria-expanded","false");m.classList.remove("open");b.textContent="Menu";});});
+})();
+</script>
+<script>
+(function(){
+  document.addEventListener("click",function(e){
+    var a=e.target.closest("a[href^='#']"); if(!a)return;
+    var id=a.getAttribute("href").slice(1),target=document.getElementById(id); if(!target)return;
+    e.preventDefault();
+    var y=target.getBoundingClientRect().top+window.pageYOffset-12;
+    window.scrollTo({top:y,behavior:"smooth"});
+    history.replaceState(null,"","#"+encodeURIComponent(id));
+  });
+})();
+</script>
+</body></html>
